@@ -7,6 +7,13 @@ module ActiveRecord
     end
     
     class << self
+
+      def inherited(klass)
+        columns_hash.each do |name, column|
+          klass.columns << column unless klass.column_names.include(name)
+        end
+      end
+
       def columns()
         @columns ||= []
       end

@@ -1,3 +1,7 @@
+[25 December 2008]
+
+* Add ability to inherit from the class inherited from the ActiveRecord::BaseWithoutTable [Reported By Max Horbul].
+
 [15 September 2007]
 
 * Update for new attribute implementation. Require Rails >= r7315.
